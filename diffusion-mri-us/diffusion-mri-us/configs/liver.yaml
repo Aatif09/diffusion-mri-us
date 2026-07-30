@@ -1,0 +1,19 @@
+# Liver configuration (CHAOS liver MRI + annotated liver ultrasound)
+image_size: 256
+latent_ch: 4
+vit_pretrained: false        # set true to load ImageNet ViT-B/16 via timm
+base_ch: 64
+ch_mult: [1, 2, 4]
+timesteps: 1000
+sample_steps: 50
+
+steps: 100000
+vae_warmup: 5000
+batch_size: 8
+lr: 0.0001
+lambda_reg: 1.0
+lambda_smooth: 1.0
+lambda_bridge: 0.5
+workers: 4
+log_every: 50
+ckpt_every: 5000

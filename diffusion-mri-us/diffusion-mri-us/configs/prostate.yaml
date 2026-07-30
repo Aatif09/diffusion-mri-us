@@ -1,0 +1,21 @@
+# Prostate configuration (PROSTATEx MRI + OpenPros simulated ultrasound)
+# OpenPros provides speed-of-sound phantoms with known geometry for controlled
+# validation (Dice / ASD / HD95 / TRE against the simulated ground truth).
+image_size: 256
+latent_ch: 4
+vit_pretrained: false
+base_ch: 64
+ch_mult: [1, 2, 4]
+timesteps: 1000
+sample_steps: 50
+
+steps: 120000
+vae_warmup: 6000
+batch_size: 8
+lr: 0.0001
+lambda_reg: 1.2
+lambda_smooth: 1.0
+lambda_bridge: 0.5
+workers: 4
+log_every: 50
+ckpt_every: 5000

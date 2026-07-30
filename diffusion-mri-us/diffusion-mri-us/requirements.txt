@@ -1,0 +1,8 @@
+torch>=2.0
+numpy>=1.23
+pyyaml>=6.0
+scikit-image>=0.20
+scipy>=1.10
+# optional
+timm>=0.9            # ImageNet-pretrained ViT-B/16 backbone
+lpips>=0.1.4         # perceptual metric for evaluation
